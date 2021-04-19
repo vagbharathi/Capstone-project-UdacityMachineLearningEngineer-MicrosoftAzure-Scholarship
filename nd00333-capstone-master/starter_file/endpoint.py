@@ -2,40 +2,26 @@ import requests
 import json
 
 # URL for the web service, should be similar to:
-scoring_uri = 'http://2a10c98d-0260-4781-a20e-60171dde9db9.southcentralus.azurecontainer.io/score'
+scoring_uri = 'http://d6ab9afc-3f9a-4d96-be3f-d94198e5f0fd.southcentralus.azurecontainer.io/score'
 # If the service is authenticated, set the key or token
-key = 'Whaq7k7cM5hJ4s47ZoVPRXvrdpqwxG4J'
+key = 'TvJZlde7lCggnp2JPgFi3CnqvousoA5C'
 
 # Two sets of data to score, so we get two results back
 data = {"data":
         [
           {
-            "age": 55,
-            "anaemia": 0,
-            "creatinine_phosphokinase": 1199,
-            "diabetes": 0,
-            "ejection_fraction": 20,
-            "high_blood_pressure": 0,
-            "platelets": 263358.03,
-            "serum_creatinine": 1.83,
-            "serum_sodium": 134,
-            "sex": 1,
-            "smoking": 1,
-            "time": 241
+            "mean_radius":12.45,
+            "mean_texture":15.7, 
+            "mean_perimeter":82.57,
+            "mean_area":477.1,
+            "mean_smoothness":0.1278
             },
           {
-            "age": 50,
-            "anaemia": 0,
-            "creatinine_phosphokinase": 196,
-            "diabetes": 0,
-            "ejection_fraction": 45,
-            "high_blood_pressure": 0,
-            "platelets": 395000,
-            "serum_creatinine": 1.6,
-            "serum_sodium": 136,
-            "sex": 1,
-            "smoking": 1,
-            "time": 285
+            "mean_radius":15.1,
+            "mean_texture":16.39,
+            "mean_perimeter":99.58,
+            "mean_area":674.5,
+            "mean_smoothness":0.115
           },
       ]
     }

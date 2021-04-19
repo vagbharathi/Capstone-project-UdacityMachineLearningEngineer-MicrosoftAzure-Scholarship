@@ -12,13 +12,13 @@ from azureml.data.dataset_factory import TabularDatasetFactory
 
 def clean_data(data):
     data = data.to_pandas_dataframe()
-    y = data['Gender']
-    x = data.drop('Gender', 1) 
+    y = data['diagnosis']
+    x = data.drop('diagnosis', 1) 
     return x, y
 
 
 def main():
-    url_path = "https://raw.githubusercontent.com/vagbharathi/Capstone-project-UdacityMachineLearningEngineer-MicrosoftAzure-Scholarship/main/nd00333-capstone-master/starter_file/gender-classification.csv"
+    url_path = "https://raw.githubusercontent.com/vagbharathi/Capstone-project-UdacityMachineLearningEngineer-MicrosoftAzure-Scholarship/main/nd00333-capstone-master/starter_file/breast_cancer_data.csv"
     ds = TabularDatasetFactory.from_delimited_files(path=url_path)
 
     # Split data into train and score sets

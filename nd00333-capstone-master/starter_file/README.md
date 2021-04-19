@@ -1,8 +1,8 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
-
 # Azure ML Nanodegree Capstone Project - Breast Cancer Prediction 
 
-*TODO:* Write a short introduction to your project.
+Worldwide, breast cancer is the most common type of cancer in women and the second highest in terms of mortality rates.Diagnosis of breast cancer is performed when an abnormal lump is found (from self-examination or x-ray) or a tiny speck of calcium is seen (on an x-ray). After a suspicious lump is found, the doctor will conduct a diagnosis to determine whether it is cancerous and, if so, whether it has spread to other parts of the body. This breast cancer dataset was obtained from the University of Wisconsin Hospitals, Madison from Dr. William H. Wolberg. Machine learning is helpful in predicting the basic detection of cancer development.
+
+Dataset is imported to Azure ML studio and two models are trained to obtain the best model. 1. AutoML - produces the various model using Azure SDK and 2. Hyperdrive - Logistic Regression using scikit-learn. Best model is picked based on accuracy and deployed. 
 
 ## Project Set Up and Installation
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
